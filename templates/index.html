@@ -67,9 +67,9 @@
               <a href="#" class="dropdown-item">Demographics</a>
               <a href="/chart" class="dropdown-item">Analytics</a>
               <a href="#" class="dropdown-item">News</a> -->
-              <!-- <div class="dropdown-divider"></div>
+          <!-- <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item text-light">Home</a> -->
-            <!-- </div> -->
+          <!-- </div> -->
           <!-- </li> -->
           <li class="nav-item">
             <a class="nav-link" href="/map">Map</a>
@@ -79,6 +79,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/documentation">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
           </li>
         </ul>
       </div>
@@ -107,13 +110,16 @@
       </div>
       <div class="col-md-6">
         <h1 class="display-5 text-dark">Interactive Map</h1>
-        <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 38 KB of
-        JS, it has all the mapping features most developers ever need. Explore <a href="https://leafletjs.com/"
-          target="_blank">Leaflet</a>.</p>
-        <p>Using the Mapbox API, we started with light and dark base maps. Once the base maps were set, various datasets and API
+        <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just
+          about 38 KB of
+          JS, it has all the mapping features most developers ever need. Explore <a href="https://leafletjs.com/"
+            target="_blank">Leaflet</a>.</p>
+        <p>Using the Mapbox API, we started with light and dark base maps. Once the base maps were set, various datasets
+          and API
           endpoints were used to extract data to create the layers that would be placed on top of the base maps.</p>
         <p>
-          The data for the interactive layers of the map were sourced from NYC Open Data. Although, the all the data for layers
+          The data for the interactive layers of the map were sourced from NYC Open Data. Although, the all the data for
+          layers
           came from Open Data, each layer uses a different API endpoint.
         </p>
       </div>
@@ -148,54 +154,60 @@
         </div>
       </div>
     </div>
-    <hr>
-    <div class="row mb-5 mt-5">
-      <div class="col-md-6 pl-5 wow fadeInLeft slow">
-        <h1 class="display-4 text-dark mt-1">Recent News</h1>
-        <h5 class="display-5 text-dark pl-1">{{ crime.daily_news_article }}</h5>
-        <h6 class="pl-1">{{ crime.daily_news_paragraph }}<br>
-          <a href="{{ crime.daily_news_story_url }}" target="_blank">NY Daily News</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark pl-1">{{crime.nbc_article}}</h5>
-        <h6 class="pl-1">{{crime.nbc_paragraph}}<br>
-          <a href="{{crime.nbc_story_url}}" target="_blank">NBC News</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark pl-1">{{crime.nytimes_article}}</h5>
-        <h6 class="pl-1">{{crime.nytimes_paragraph}}<br>
-          <a href="{{crime.nytimes_story_url}}" target="_blank">NY Times</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark pl-1">{{crime.pix11_article}}</h5>
-        <h6 class="pl-1">{{crime.pix11_paragraph}}<br>
-          <a href="{{crime.pix11_story_url}}" target="_blank">Pix 11 News</a><br>
-        </h6>
-      </div>
-      
-      
-      <div class="col-md-6 pl-5 wow fadeInRight slow">
-        <h1 class="display-4 text-dark mt-1">Social Media</h1>
+    <div class="container pt-5 mb-5">
+      <!-- <div class="row pt-2 pb-5">
+            </div>
+            <div class="row pb-5 pt-5">
+            </div> -->
+      <hr>
+      <div class="row mb-2 mt-5">
+        <div class="col-md-6 pl-5 wow fadeInLeft slow">
+          <h1 class="display-4 text-dark mt-1">Recent News</h1>
+          <h5 class="display-5 text-dark pl-1">{{ crime.daily_news_article }}</h5>
+          <h6 class="pl-1">{{ crime.daily_news_paragraph }}<br>
+            <a href="{{ crime.daily_news_story_url }}" target="_blank">NY Daily News</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark pl-1">{{crime.nbc_article}}</h5>
+          <h6 class="pl-1">{{crime.nbc_paragraph}}<br>
+            <a href="{{crime.nbc_story_url}}" target="_blank">NBC News</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark pl-1">{{crime.nytimes_article}}</h5>
+          <h6 class="pl-1">{{crime.nytimes_paragraph}}<br>
+            <a href="{{crime.nytimes_story_url}}" target="_blank">NY Times</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark pl-1">{{crime.pix11_article}}</h5>
+          <h6 class="pl-1">{{crime.pix11_paragraph}}<br>
+            <a href="{{crime.pix11_story_url}}" target="_blank">Pix 11 News</a><br>
+          </h6>
+        </div>
 
-        <h5 class="display-5 text-dark">NYCEM - Notify NYC</h5><br>
-        <h6 class="">{{crime.nycem_tweet}}<br>
-          <a href="{{crime.nycem_tweet_url}}" target="_blank">Full Tweet</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark">NYPD NEWS</h5>
-        <h6 class="">{{crime.nypd_tweet}}<br>
-          <a href="{{crime.nypd_tweet_url}}" target="_blank">Full Tweet</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark">NYPD School Safety</h5>
-        <h6 class="">{{crime.nypd_schools_tweet}}<br>
-          <a href="{{crime.nypd__schools_tweet_url}}" target="_blank">Full Tweet</a><br>
-        </h6>
-        <br>
-        <h5 class="display-5 text-dark">NYPD Crime Stoppers</h5>
-        <h6 class="">{{crime.crime_stoppers_tweet}}<br>
-          <a href="{{crime.crime_stoppers_url}}" target="_blank">Full Tweet</a><br>
-        </h6>
+
+        <div class="col-md-6 pl-5 wow fadeInRight slow">
+          <h1 class="display-4 text-dark mt-1">Social Media</h1>
+
+          <h5 class="display-5 text-dark">NYCEM - Notify NYC</h5><br>
+          <h6 class="">{{crime.nycem_tweet}}<br>
+            <a href="{{crime.nycem_tweet_url}}" target="_blank">Full Tweet</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark">NYPD NEWS</h5>
+          <h6 class="">{{crime.nypd_tweet}}<br>
+            <a href="{{crime.nypd_tweet_url}}" target="_blank">Full Tweet</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark">NYPD School Safety</h5>
+          <h6 class="">{{crime.nypd_schools_tweet}}<br>
+            <a href="{{crime.nypd__schools_tweet_url}}" target="_blank">Full Tweet</a><br>
+          </h6>
+          <br>
+          <h5 class="display-5 text-dark">NYPD Crime Stoppers</h5>
+          <h6 class="">{{crime.crime_stoppers_tweet}}<br>
+            <a href="{{crime.crime_stoppers_url}}" target="_blank">Full Tweet</a><br>
+          </h6>
+        </div>
       </div>
     </div>
   </div>

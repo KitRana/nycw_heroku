@@ -1,0 +1,312 @@
+{
+    "name": "NYC",
+    "children": [
+        {
+            "name": "BRONX",
+            "color": "green",
+            "parent": "NYC",
+            "children": [
+                {
+                    "name": "APT",
+                    "parent": "BRONX",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Off. Agnst Pub Ord Sensblty",
+                            "parent:": "APT"
+                        }
+                    ]
+                    
+    
+                },
+                {
+                    "name": "HOUSE",
+                    "parent": "BRONX",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "HOUSE"
+                        }
+                    ]
+                },
+                {
+                    "name": "PUBLIC HOUSING",
+                    "parent": "BRONX",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Dangerous Drugs",
+                            "parent:": "PUBLIC HOUSING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BROOKLYN",
+            "color": "yellow",
+            "parent": "NYC",
+            "children": [
+                {
+                    "name": "APT",
+                    "parent": "BROOKLYN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Assualt 3",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Petit Larceny",
+                            "parent:": "APT"
+                        }
+                    ]
+                },
+                {
+                    "name": "HOUSE",
+                    "parent": "BROOKLYN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Petit Larceny",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "HOUSE"
+                        }
+                    ]
+                },
+                {
+                    "name": "PUBLIC HOUSING",
+                    "parent": "BROOKLYN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "PUBLIC HOUSING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "QUEENS",
+            "color": "blue",
+            "parent": "NYC",
+            "children": [
+                {
+                    "name": "APT",
+                    "parent": "QUEENS",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Petit Larceny",
+                            "parent:": "APT"
+                        }
+                    ]
+                },
+                {
+                    "name": "HOUSE",
+                    "parent": "QUEENS",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Petit Larceny",
+                            "parent:": "HOUSE"
+                        }
+                    ]
+                },
+                {
+                    "name": "PUBLIC HOUSING",
+                    "parent": "QUEENS",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Miscellaneous Penal Law",
+                            "parent:": "PUBLIC HOUSING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MANHATTAN",
+            "color": "red",
+            "parent": "NYC",
+            "children": [
+                {
+                    "name": "APT",
+                    "parent": "MANHATTAN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Grand Larceny",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Petit Larceny",
+                            "parent:": "APT"
+                        }
+                    ]
+                },
+                {
+                    "name": "HOUSE",
+                    "parent": "MANHATTAN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Grand Larceny",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Off. Agnst Pub Ord Sensblty",
+                            "parent:": "HOUSE"
+                        }
+                    ]
+                },
+                {
+                    "name": "PUBLIC HOUSING",
+                    "parent": "MANHATTAN",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "PUBLIC HOUSING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "STATEN ISLAND",
+            "color": "purple",
+            "parent": "NYC",
+            "children": [
+                {
+                    "name": "APT",
+                    "parent": "STATEN ISLAND",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "APT"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "APT"
+                        }
+                    ]
+                },
+                {
+                    "name": "HOUSE",
+                    "parent": "STATEN ISLAND",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "HOUSE"
+                        },
+                        {
+                            "name": "Off. Agnst Pub Ord Sensbly",
+                            "parent:": "HOUSE"
+                        }
+                    ]
+                },
+                {
+                    "name": "PUBLIC HOUSING",
+                    "parent": "STATEN ISLAND",
+                    "children": [
+                        {
+                            "name": "Harassment 2",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Assault 3",
+                            "parent:": "PUBLIC HOUSING"
+                        },
+                        {
+                            "name": "Criminal Mischief",
+                            "parent:": "PUBLIC HOUSING"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

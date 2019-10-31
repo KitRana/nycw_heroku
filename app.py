@@ -14,8 +14,8 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
-    crime_data = crime_web_scraping.scrape()
-    mongo.db.crime.replace_one({}, crime_data, True)
+    # crime_data = crime_web_scraping.scrape()
+    # mongo.db.crime.replace_one({}, crime_data, True)
     crime = mongo.db.crime.find_one()
     return render_template("index.html", crime=crime)
 
@@ -33,6 +33,19 @@ def fullmap ():
 @app.route("/documentation")
 def about ():
     return render_template("about.html")
+
+# news
+@app.route("/news")
+def news ():
+    crime = mongo.db.crime.find_one()
+    return render_template("news.html", crime=crime)
+
+@app.route("/scrape")
+def scrape ():
+    crime_data = crime_web_scraping.scrape()
+    mongo.db.crime.replace_one({}, crime_data, True)
+    crime = mongo.db.crime.find_one()
+    return redirect("/news")
 
 if __name__ == "__main__":
     app.run(debug=True)
