@@ -234,6 +234,66 @@
   <!-- Leaflet heatmap plugin-->
   <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
   <script type="text/javascript" src="static/js/animate.js"></script>
+  <!-- Rasa Webchat Component -->
+  <!-- This will only be available if the Rasa server is running on the location machine -->
+  <div id="webchat" />
+  <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+  
+  // Or you can replace latest with a specific version
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/get_started",
+      customData: { "userId": "123" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+      socketUrl: "http://localhost:5055",
+      socketPath: "/socket.io/",
+      title: "ESAI",
+      subtitle: "Emergency Service Artificial Intelligence",
+      inputTextFieldHint: "Type a message...",
+      connectingText: "Waiting for server...",
+      hideWhenNotConnected: true,
+      fullScreenMode: true,
+      showFullScreenButton: true,
+      // profileAvatar: "http://to.avat.ar",
+      openLauncherImage: 'myCustomOpenImage.png',
+      closeLauncherImage: 'myCustomCloseImage.png',
+      displayUnreadCount: true, // --> [view](./assets/unread_count_pastille.png)
+      showMessageDate: true,
+      tooltipPayload: '/get_tooltip',
+      tooltipDelay: 1000,
+      customMessageDelay: (message) => {
+        if (message.length > 100) return 2000;
+        return 1000;
+      },
+      params: {
+        images: {
+          dims: {
+            width: 300,
+            height: 200,
+          }
+        },
+        storage: "local"
+      },
+    })
+  </script>
+  <!-- Custom component styling for chat interface -->
+  <style>
+    .conversation-container .header,
+    .conversation-container .client,
+    .conversation-container .toggle-fullscreen-button,
+    .full-screen .close-button {
+      background-color: rgb(56, 56, 56);
+    }
+  
+    .launcher {
+      background-color: rgb(56, 56, 56);
+    }
+  
+    .conversation-container .header.with-subtitle span {
+      left: 20px;
+    }
+  </style>
+  <!-- End Rasa Webchat Component -->
 </body>
 
 </html>

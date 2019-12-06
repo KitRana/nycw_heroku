@@ -57,19 +57,22 @@ def scrape():
     nytimes_story_url = ny_times_url.replace('/section/nyregion', nytimes_storyl_route)
 
 
-    # Pix 11
+    # Pix 11 - updated due to Pix11 website redesign - AR
     pix11_url = 'https://pix11.com/category/local-stories/'
     r = requests.get(pix11_url)
     pix11_soup = BeautifulSoup(r.content, 'html5lib')
 
     # Grab the first title
-    pix11_article = pix11_soup.find('h2', class_='entry-title').find('a').text
+    pix11_article = pix11_soup.find('h3', class_='ListItem-title').text
 
     #Grab the url
     pix11_story_url = pix11_soup.find(
-        'h2', class_='entry-title').find('a')['href']
+        'a', class_='ListItem')['href']
 
-    pix11_paragraph = pix11_soup.find('div', class_='excerpt').get_text()
+    r = requests.get(pix11_story_url)
+    pix11_soup = BeautifulSoup(r.content, 'html5lib')
+
+    pix11_paragraph = pix11_soup.find('div', class_= 'RichTextArticleBody').find('p').get_text()
 
     # Twitter
     nycem_tweet_url = 'https://twitter.com/NotifyNYC'
