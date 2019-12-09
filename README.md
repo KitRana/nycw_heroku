@@ -1,8 +1,21 @@
-# NYCity Watch 
-#### A site about NYC public safety
+# NYCity Watch  
+<!-- forthebadge -->
+![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)  
+[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)  
+### And so much more!
+#  
+
+
+## Description
+NYCity Watch provides public safety information about New York City and looks at various factors including crime, EMS response times, and recent local news.  The site provides a clean and modern front-end design, interactive maps with various layers connected to API endpoints fed from NYC Open Data, data visualizations, and recent headlines scraped from popular news and social media outlets.  
+
 See it here https://nycw.herokuapp.com  
   
-Note: The site is still a work in progress.  
+<b>The site is still a work in progress.  
 
 ## Recent Updates
 * New repository created to consolidate both github and heroku remotes
