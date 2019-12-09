@@ -4,7 +4,7 @@
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)
 ![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
-![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)  
+![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)  
 ### And so much more!
 #  
@@ -15,7 +15,7 @@ NYCity Watch provides public safety information about New York City and looks at
 
 See it here https://nycw.herokuapp.com  
   
-<b>The site is still a work in progress.  
+<b>The site is still a work in progress.</b>  
 
 ## Recent Updates
 * New repository created to consolidate both github and heroku remotes
