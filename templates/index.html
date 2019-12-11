@@ -110,7 +110,7 @@
       </div>
       <div class="col-md-6">
         <h1 class="display-5 text-dark">Interactive Map</h1>
-        <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just
+        <!-- <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just
           about 38 KB of
           JS, it has all the mapping features most developers ever need. Explore <a href="https://leafletjs.com/"
             target="_blank">Leaflet</a>.</p>
@@ -121,6 +121,17 @@
           The data for the interactive layers of the map were sourced from NYC Open Data. Although, the all the data for
           layers
           came from Open Data, each layer uses a different API endpoint.
+        </p> -->
+        <p>Our interactive safety map provides up to date information about crime within New York City's five boroughs. Our data layers include detailed information on shootings, arrests, complaints, and more.  We also provide detailed collision information.  
+        </p>
+        <p>Nearly all of the data layers are fed from an API endpoint and have distinct characteristics regarding the data point size and color.  Detailed information about these characteristics can be found in the <a href="/documentation" target="_blank">documentation</a> section.</p>
+        <p>
+          The data for the interactive layers of the map were sourced from NYC Open Data. Although, the all the data for
+          layers
+          came from Open Data, each layer uses a different API endpoint.
+        </p>
+        <p>
+            <a class="btn btn-black text-light" href="/map" role="button">Full Map</a>
         </p>
       </div>
     </div>
@@ -146,6 +157,9 @@
           Find out what the average response time would be if you ever found yourself in one of these emergencies,
           explore which
           New York City boroughs have the best response times, and whether these response times are improving over time.
+        </p>
+        <p>
+          <a class="btn btn-black text-light" href="/chart" role="button">Full Chart</a>
         </p>
       </div>
       <div class="col-md-6 wow fadeInRight slow">
@@ -255,7 +269,7 @@
       fullScreenMode: true,
       showFullScreenButton: true,
       // profileAvatar: "http://to.avat.ar",
-      openLauncherImage: 'myCustomOpenImage.png',
+      // openLauncherImage: 'myCustomOpenImage.png',
       closeLauncherImage: 'myCustomCloseImage.png',
       displayUnreadCount: true, // --> [view](./assets/unread_count_pastille.png)
       showMessageDate: true,

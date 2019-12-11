@@ -33,13 +33,13 @@ def scrape():
     nbc_soup = BeautifulSoup(r.content, 'html5lib')
 
     # Grab the first title
-    nbc_article = nbc_soup.find('h3', id='headline1').text
+    nbc_article = nbc_soup.find('h3', class_='story-card__title').find('a').get_text()
 
     # Grab the paragraph
-    nbc_paragraph = nbc_soup.find('p', class_='summary').text
+    nbc_paragraph = nbc_soup.find('div', class_='story-card__text').find('div', class_='story-card__excerpt').find('p').get_text()
 
-    nbc_story_url = nbc_soup.find('h3', id='headline1').find('a')['href']
-    nbc_story_url = nbc_story_url.replace('//', 'https://')
+    nbc_story_url = nbc_soup.find('h3', class_='story-card__title').find('a')['href']
+    # nbc_story_url = nbc_story_url.replace('//', 'https://')
 
     # NY Times
     ny_times_url = 'https://www.nytimes.com/section/nyregion'
