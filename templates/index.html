@@ -248,13 +248,14 @@
   <!-- Leaflet heatmap plugin-->
   <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
   <script type="text/javascript" src="static/js/animate.js"></script>
+  
   <!-- Rasa Webchat Component -->
   <!-- This will only be available if the Rasa server is running on the location machine -->
-  <div id="webchat" />
-  <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+  <!-- <div id="webchat" />
+  <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script> -->
   
-  // Or you can replace latest with a specific version
-  <script>
+  <!-- Or you can replace latest with a specific version -->
+  <!-- <script>
     WebChat.default.init({
       selector: "#webchat",
       initPayload: "/get_started",
@@ -268,10 +269,10 @@
       hideWhenNotConnected: true,
       fullScreenMode: true,
       showFullScreenButton: true,
-      // profileAvatar: "http://to.avat.ar",
-      // openLauncherImage: 'myCustomOpenImage.png',
+      profileAvatar: "http://to.avat.ar", // comment out
+      openLauncherImage: 'myCustomOpenImage.png', // comment out
       closeLauncherImage: 'myCustomCloseImage.png',
-      displayUnreadCount: true, // --> [view](./assets/unread_count_pastille.png)
+      displayUnreadCount: true, // [view](./assets/unread_count_pastille.png)
       showMessageDate: true,
       tooltipPayload: '/get_tooltip',
       tooltipDelay: 1000,
@@ -289,9 +290,9 @@
         storage: "local"
       },
     })
-  </script>
+  </script> -->
   <!-- Custom component styling for chat interface -->
-  <style>
+  <!-- <style>
     .conversation-container .header,
     .conversation-container .client,
     .conversation-container .toggle-fullscreen-button,
@@ -306,7 +307,7 @@
     .conversation-container .header.with-subtitle span {
       left: 20px;
     }
-  </style>
+  </style> -->
   <!-- End Rasa Webchat Component -->
 </body>
 
