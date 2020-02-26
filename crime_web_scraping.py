@@ -36,7 +36,7 @@ def scrape():
     nbc_article = nbc_soup.find('h3', class_='story-card__title').find('a').get_text()
 
     # Grab the paragraph
-    nbc_paragraph = nbc_soup.find('div', class_='story-card__text').find('div', class_='story-card__excerpt').find('p').get_text()
+    nbc_paragraph = nbc_soup.find('div', class_='story-card__excerpt').get_text()
 
     nbc_story_url = nbc_soup.find('h3', class_='story-card__title').find('a')['href']
     # nbc_story_url = nbc_story_url.replace('//', 'https://')
